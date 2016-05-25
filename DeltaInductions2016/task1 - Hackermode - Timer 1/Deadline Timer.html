@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Delta Event launch</title> 
+       <link rel=stylesheet href="styledt.css">
+       <script src="timerdt.js"></script>
+   </head>
+   <body>
+      <div id="headline">
+         <a href="Deadline%20Timer.html">DELTA EVENT LAUNCH TIMER</a>
+      </div>
+      <div id="timerblock">
+         <div id="clock">
+            <p id="mainText">ENTER DEADLINE OF THE EVENT LAUNCH</p>
+         </div>
+          
+          <!-- input form with button -->
+          
+         <div id="inputform">
+            <input type="datetime-local" id="deadline">
+            <br/>
+            <button onclick="timetrigger()" id="trigger">START TIMER</button>
+         </div>
+         <div id="clockBlock" style="display:none">
+            <div class="block">
+               <div class="unit">DAYS</div>
+               <span id="days"></span>
+            </div>
+            <div class="block">
+               <div class="unit">HOURS</div>
+               <span id="hours"></span>
+            </div>
+            <div class="block">
+               <div class="unit">MINUTES</div>
+               <span id="minutes"></span>
+            </div>
+            <div class="block">
+               <div class="unit">SECONDS</div>
+               <span id="seconds"></span>
+            </div>
+         </div>
+      </div>
+      <div id="successText">
+         <p></p>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,66 @@
+/* CSS for background image */
+         html { 
+         background: url(bg.png) no-repeat center center fixed;          
+         /*-webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover; */
+         background-size: cover;
+         height: 100%;
+         }
+         body{
+         text-align: center;
+         }
+         a { color: inherit;
+         text-decoration: inherit;
+         }
+         #headline {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: center;
+         font-size: 30px;
+         font-weight:bolder;
+         padding: 20px;
+         margin: auto;
+         margin-top: 2.5%;
+         width: 60%;
+         color: white;
+         border-style: solid;
+         border-width: thick; 
+         border-color: white;
+         }  
+         #clock {
+         margin: auto;
+         margin-top: 8%;
+         }
+         #mainText {
+         margin:auto;
+         text-align: center;
+         font-family: Arial, Helvetica, sans-serif;
+         color: white;
+         font-size:25px;
+         font-weight:bolder;
+         margin-bottom: 2%;
+         }
+         #clockBlock{
+         margin: auto;
+         display: inline-block;
+         }
+         .block{
+         display: inline-block;
+         padding: 20px;
+         margin: 20 px;
+         width: 150px;
+         background-color: black;
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 25px;
+         font-weight: bolder;
+         }
+         #successText{
+         margin:auto;
+         text-align: center;
+         font-family: Arial, Helvetica, sans-serif;
+         color: white;
+         font-size:25px;
+         font-weight:bolder;
+         margin-bottom: 45%;
+         }

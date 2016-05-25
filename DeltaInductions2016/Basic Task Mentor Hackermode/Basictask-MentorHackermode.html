@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Delta Rocket launch</title>
+      <link rel=stylesheet href="btmhm.css">
+   </head>
+   <body>
+      <div id="headline">
+         <a href="Basictask-MentorHackermode.html">DELTA ROCKET LAUNCH</a>
+      </div>
+      <div id="timerblock">
+         <div id="clock">
+            <p id="mainText">THE LAUNCH IS IN</p>
+         </div>
+         <div id="clockBlock">
+            <div class="block">
+               <div class="unit">DAYS</div>
+               <span id="days"></span>
+            </div>
+            <div class="block">
+               <div class="unit">HOURS</div>
+               <span id="hours"></span>
+            </div>
+            <div class="block">
+               <div class="unit">MINUTES</div>
+               <span id="minutes"></span>
+            </div>
+            <div class="block">
+               <div class="unit">SECONDS</div>
+               <span id="seconds"></span>
+            </div>
+         </div>
+      </div>
+      <div id="successText">
+         <p></p>
+      </div>
+<<<<<<< HEAD
+       <script src="btmhm.js"></script>
+=======
+      <script>
+         function timer(){
+         var DeadlineDate = new Date("May 25, 2016 01:24:30");                               //Preset date                   
+         var currentDate = new Date();                                                       //Gets current date
+         var remainingTime = Date.parse(DeadlineDate) - Date.parse(currentDate);
+         var seconds = parseInt((remainingTime/1000)%60);                                    
+         var minutes = parseInt((remainingTime/(1000*60))%60);
+         var hours = parseInt((remainingTime/(1000*60*60))%24);                              //conversion of milliseconds to days, hours, minutes and seconds
+         var days = parseInt(remainingTime/(1000*60*60*24));
+         document.getElementById("days").innerHTML = days;
+         document.getElementById("hours").innerHTML = hours;                                
+         document.getElementById("minutes").innerHTML = minutes;                             
+         document.getElementById("seconds").innerHTML = seconds;
+         
+         
+             if(remainingTime<=0){                                                          
+         document.getElementById("days").innerHTML = -days;
+         document.getElementById("hours").innerHTML = -hours;                                
+         document.getElementById("minutes").innerHTML = -minutes;                            //conversion of negative number to positive                             
+         document.getElementById("seconds").innerHTML = -seconds;
+         document.getElementById("mainText").innerHTML = "THE LAUNCH IS DELAYED BY";
+         var blocks = document.getElementsByClassName("block");
+         for(i=0;i<4;i++){       
+         blocks[i].style.backgroundColor="red";                                              //changes the background to timer blocks to red
+             }
+            }
+         }
+         timer(); 
+         var timeinterval = setInterval(timer,1000);                                          //sets a interval of 1 second to run the function
+      </script>
+>>>>>>> 5c87562cd7a792768bfe703641afb13c7222522a
+   </body>
+</html>

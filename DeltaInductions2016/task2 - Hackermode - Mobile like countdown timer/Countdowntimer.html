@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>DELTA COUNTDOWN TIMER</title>
+      <link rel=stylesheet href="stylecdt.css">
+      <script src="cdt.js"></script>
+   </head>
+   <body>
+      <div id="headline">
+         <a href="Countdowntimer.html">DELTA COUNTDOWN TIMER</a>
+      </div>
+      <div id="timerblock">
+         <div id="clock">
+            <p id="mainText">ENTER DURATION</p>
+         </div>
+         <!-- input form with button --> 
+         <div id="inputform">
+            <div class="block">
+               <div class="unit">HOURS</div>
+               <input type="number" class="time" id="ihours">
+            </div>
+            <div class="block">
+               <div class="unit">MINUTES</div>
+               <input type="number" class="time" id="iminutes">
+            </div>
+            <div class="block">
+               <div class="unit">SECONDS</div>
+               <input type="number" class="time" id="iseconds">
+            </div>
+            <br>
+            <button onclick="timetrigger()" id="trigger">START TIMER</button>
+         </div>
+         <div id="clockBlock">
+            <div class="block">
+               <div class="unit">HOURS</div>
+               <span id="hours"></span>
+            </div>
+            <div class="block">
+               <div class="unit">MINUTES</div>
+               <span id="minutes"></span>
+            </div>
+            <div class="block">
+               <div class="unit">SECONDS</div>
+               <span id="seconds"></span>
+            </div>
+            <br>
+            <div id="buttonblock">
+               <button onclick="stopstart()" class="buttons" id="startstop">STOP</button>
+               <button onclick="resettime()" class="buttons" id="startstop">RESET</button>
+            </div>
+            <br>
+            <div class="buttons" id="button-x">
+               <a href="Countdowntimer.html">ENTER NEW TIME</a>
+            </div>
+         </div>
+      </div>
+      <div id="successText">
+         <p>TIME UP!</p>
+       </div>
+   </body>
+</html>
