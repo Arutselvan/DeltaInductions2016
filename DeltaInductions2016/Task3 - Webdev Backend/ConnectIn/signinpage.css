@@ -1,0 +1,48 @@
+html,body{
+width:100%;
+height:100%;
+margin:0;
+background-image: url("cibg.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center fixed;
+font-family: 'Exo', sans-serif;
+}
+#titleblock{
+background-color: crimson;
+padding: 30px;
+margin-bottom: 1.5%;
+color: white;
+font-size: 50px;
+margin: auto;
+}
+#formblock{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    color: black;
+    margin-top: 2.5%;
+    padding: 20px;
+    border: 1px solid black;
+    width: 60%;
+    border: 5px solid crimson;
+}
+.input{
+    width:300px;
+    height: 30px;
+}
+#err{
+    font-size: 15px;
+    color: red;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+#button2{
+    font-size: 20px;
+    background-color: blue;
+     color: white;
+    padding: 10px;
+    border: none;
+}

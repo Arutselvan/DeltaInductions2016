@@ -1,0 +1,64 @@
+html,body{
+width:100%;
+height:100%;
+margin:0;
+background-image: url("cibg.png");
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Exo', sans-serif;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+#titleblock{
+background-color: crimson;
+padding: 30px;
+margin-bottom: 1.5%;
+color: white;
+font-size: 50px;
+margin: auto;
+}
+#propic{
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+}
+#details{
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    margin-top: 2%;
+    border: 5px solid crimson;
+}
+#button1{
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: blue;
+     color: white;
+    padding: 10px;
+    border: none;
+}
+#button2{
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: limegreen;
+     color: white;
+    padding: 10px;
+    border: none;
+}
+#button3{
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+     background-color: white;
+     color: crimson;
+    padding: 10px;
+    border: 1px crimson dash;
+}
